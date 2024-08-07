@@ -89,7 +89,7 @@ const errorHandler = (err, req, res, _next) => {
   res.status(statusCode).json(responsePayload);
 };
 
-module.exports = {
+export {
   ServerError,
   Conflict,
   Forbidden,

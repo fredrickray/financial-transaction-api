@@ -1,7 +1,7 @@
-require("dotenv").config();
-const express = require("express");
-const { errorHandler, routeNotFound } = require("./middlewares/errorHandler");
-const connectDB = require("./config/db");
+import "dotenv/config";
+import express from "express";
+import { errorHandler, routeNotFound } from "./middlewares/errorHandler.js";
+import connectDB from "./config/db.js";
 
 const port = process.env.PORT || 8229;
 
@@ -10,6 +10,11 @@ connectDB().then(() => {
     console.log("listening for requests");
   });
 });
+
+const app = express();
+
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
 
 app.get("/", (req, res) => {
   res.send({

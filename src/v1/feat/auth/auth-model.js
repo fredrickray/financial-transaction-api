@@ -1,5 +1,5 @@
 import { Schema, model } from "mongoose";
-import { hashData } from "../../../middlewares/authMiddleware";
+import { hashData } from "../../../middlewares/authMiddleware.js";
 
 const userSchema = new Schema(
   {

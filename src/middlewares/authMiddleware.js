@@ -1,5 +1,9 @@
-import { UserModel } from "../v1/feat/auth/auth-model";
-import { Unauthorized, InvalidInput, ResourceNotFound } from "./errorHandler";
+import { UserModel } from "../v1/feat/auth/auth-model.js";
+import {
+  Unauthorized,
+  InvalidInput,
+  ResourceNotFound,
+} from "./errorHandler.js";
 import bcrypt from "bcryptjs";
 
 const createToken = (id) => {

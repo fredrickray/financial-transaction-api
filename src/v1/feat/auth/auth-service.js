@@ -4,8 +4,8 @@ import {
   BadRequest,
   InvalidInput,
   Unauthorized,
-} from "../../../middlewares/errorHandler";
-import { createToken } from "../../../middlewares/authMiddleware";
+} from "../../../middlewares/errorHandler.js";
+import { createToken } from "../../../middlewares/authMiddleware.js";
 
 class AuthService {
   static async signin(req, res, next) {
