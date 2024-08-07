@@ -1,6 +1,6 @@
 import { Router } from "express";
 import { AuthController } from "./auth-controller.js";
-
+import { signinValidator } from "../../../validations/auth-validation.js";
 const authRouter = Router();
 const authController = new AuthController();
 

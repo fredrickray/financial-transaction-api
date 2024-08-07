@@ -1,4 +1,4 @@
-import { UserModel } from "./auth-model";
+import { UserModel } from "./auth-model.js";
 import {
   ResourceNotFound,
   BadRequest,
