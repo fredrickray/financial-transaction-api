@@ -10,6 +10,7 @@
 - [Testing](#testing)
 - [Deployment](#deployment)
 - [Contributing](#contributing)
+- [API Documentation](#apidocumentation)
 
 ## Prerequisites
 
@@ -66,16 +67,9 @@ To run the application locally, follow these steps:
 
 To run tests for the application:
 
-1. **Run the test suite**:
+. **Run the test**:
    ```bash
-   python manage.py test  # Django example
-   npm test  # Node.js example
-   ```
-
-2. **Check test coverage** (if applicable):
-   ```bash
-   coverage run -m pytest  # Example for Python projects
-   coverage report
+   npm test
    ```
 
 ## Deployment
@@ -87,10 +81,7 @@ To deploy the application to a production environment:
    npm run build  # Example for frontend projects
    ```
 
-2. **Deploy to the server**:
-   - Detail deployment steps (e.g., using Heroku, Docker, AWS, etc.).
-
-3. **Additional configuration**:
+2. **Additional configuration**:
    - Configure environment variables.
    - Set up monitoring and logging.
 
@@ -119,3 +110,8 @@ If you'd like to contribute to this project, please fork the repository and use 
    ```
 
 5. **Create a pull request**.
+
+
+## Api Documentation
+[Postman Docs](https://documenter.getpostman.com/view/21436608/2sA3s1nrgt)
+
