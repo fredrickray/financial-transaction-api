@@ -10,7 +10,6 @@
 - [Testing](#testing)
 - [Deployment](#deployment)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Prerequisites
 
