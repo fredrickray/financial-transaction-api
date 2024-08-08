@@ -17,8 +17,8 @@ class TransactionService {
 
       const resPayload = {
         success: true,
-        message: "Transaction recoreded successfully",
-        data: transaction,
+        message: "Transaction recorded successfully",
+        data: { transaction },
       };
       res.status(200).json(resPayload);
     } catch (error) {

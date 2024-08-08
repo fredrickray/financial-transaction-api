@@ -30,7 +30,6 @@ class AuthService {
 
       res.status(201).json(resPayload);
     } catch (error) {
-      console.log(error);
       next(error);
     }
   }
@@ -58,7 +57,6 @@ class AuthService {
       };
       res.status(200).set("Authorization", `Bearer ${token}`).json(resPayload);
     } catch (error) {
-      console.log(error);
       next(error);
     }
   }
