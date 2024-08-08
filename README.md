@@ -1,6 +1,6 @@
 # FINANCIAL TRANSACTION API
 
-*Financial Transaction API** is an [API that allow users to create, retrieve, and list transactions.].
+*Financial Transaction API* is an API that allow users to create, retrieve, and list transactions.
 
 ## Table of Contents
 - [Prerequisites](#prerequisites)
