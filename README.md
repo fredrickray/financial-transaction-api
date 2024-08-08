@@ -10,7 +10,7 @@
 - [Testing](#testing)
 - [Deployment](#deployment)
 - [Contributing](#contributing)
-- [API Documentation](#apidocumentation)
+- [API Documentation](#api-documentation)
 
 ## Prerequisites
 
@@ -112,6 +112,6 @@ If you'd like to contribute to this project, please fork the repository and use 
 5. **Create a pull request**.
 
 
-## Api Documentation
+## API-Documentation
 [Postman Docs](https://documenter.getpostman.com/view/21436608/2sA3s1nrgt)
 
