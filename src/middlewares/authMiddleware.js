@@ -1,3 +1,4 @@
+import jwt from "jsonwebtoken";
 import { UserModel } from "../v1/feat/auth/auth-model.js";
 import {
   Unauthorized,

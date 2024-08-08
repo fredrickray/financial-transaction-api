@@ -6,8 +6,18 @@ const transactionSchema = new Schema({
   amount: { type: Number, required: true },
   type: { type: String, enum: ["credit", "debit"], required: true },
   description: { type: String, required: true },
-  createdAt: { type: Date, default: Date.now },
+  date: { type: Date, default: Date.now },
 });
+
+transactionSchema.methods.toJSON = function () {
+  const transaction = this;
+  const transactionObject = transaction.toObject();
+
+  delete transactionObject.__v;
+  delete transactionObject.id;
+
+  return transactionObject;
+};
 
 const Transaction = model("Transaction", transactionSchema);
 

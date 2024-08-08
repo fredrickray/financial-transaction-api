@@ -1,9 +1,10 @@
 import { Schema, model } from "mongoose";
 import { hashData } from "../../../middlewares/authMiddleware.js";
+import bcrypt from "bcryptjs";
 
 const userSchema = new Schema(
   {
-    username: {
+    email: {
       type: String,
       required: true,
       unique: true,
@@ -21,8 +22,10 @@ userSchema.methods.toJSON = function () {
   const user = this;
   const userObject = user.toObject();
 
+  delete userObject.__v;
   delete userObject.password;
   delete userObject.createdAt;
+  delete userObject.updatedAt;
 
   return userObject;
 };

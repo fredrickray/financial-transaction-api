@@ -6,6 +6,15 @@ export class AuthController {
   }
 
   /**
+   * @route POST api/auth/signup
+   * @desc Login a user
+   * @access Public
+   */
+  async signup(req, res, next) {
+    await this.authService.signup(req, res, next);
+  }
+
+  /**
    * @route POST api/auth/signin
    * @desc Login a user
    * @access Public

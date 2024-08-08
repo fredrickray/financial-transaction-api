@@ -14,7 +14,21 @@ export class TransactionController {
     await this.transactionService.createTransaction(req, res, next);
   }
 
-  async getTransaction(req, res, next) {
+  /**
+   * @route GET api/transaction/:id
+   * @desc Get a transanction.
+   * @access Public
+   */
+  async getTransactionId(req, res, next) {
+    await this.transactionService.getTransactionById(req, res, next);
+  }
+
+  /**
+   * @route GET api/transaction
+   * @desc Get all transanctions.
+   * @access Public
+   */
+  async getTransactions(req, res, next) {
     await this.transactionService.getTransactions(req, res, next);
   }
 }
