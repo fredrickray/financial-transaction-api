@@ -1,10 +1,6 @@
-Creating a good and comprehensive description for a `README.md` file is crucial to ensure that other developers (or even future you) can easily understand how to set up and run the project. Below is a template you can use and customize according to the specifics of your project:
+# FINANCIAL TRANSACTION API
 
----
-
-# Project Name
-
-**Project Name** is a [brief description of what the project does or aims to achieve].
+*Financial Transaction API** is an [API that allow users to create, retrieve, and list transactions.].
 
 ## Table of Contents
 - [Prerequisites](#prerequisites)
@@ -19,11 +15,9 @@ Creating a good and comprehensive description for a `README.md` file is crucial 
 ## Prerequisites
 
 Before you begin, ensure you have met the following requirements:
-- **Operating System**: [OS version or name, e.g., Ubuntu 20.04, Windows 10]
-- **Programming Language**: [Language and version, e.g., Python 3.8+, Node.js 14+]
-- **Dependencies/Package Manager**: [e.g., pip, npm, yarn]
-- **Database**: [e.g., MySQL, PostgreSQL, MongoDB]
-- **Other Requirements**: [e.g., Docker, Redis]
+- **Programming Language**: [Node.js 14+]
+- **Dependencies/Package Manager**: [npm]
+- **Database**: [MongoDB Compass(GUI) or MongoDb Shell]
 
 ## Installation
 
@@ -31,41 +25,31 @@ Follow these steps to install the project:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/projectname.git
+   git clone https://github.com/fredrickray/fredrickray-financial-transaction-api
    cd projectname
    ```
 
-2. **Set up a virtual environment** (if applicable):
+2. **Install dependencies:**
    ```bash
-   python3 -m venv venv
-   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-   ```
-
-3. **Install dependencies:**
-   ```bash
-   pip install -r requirements.txt  # For Python projects
    npm install  # For Node.js projects
    ```
 
-4. **Set up environment variables:**
+3. **Set up environment variables:**
    - Rename `.env.example` to `.env`.
    - Update the environment variables in the `.env` file with your configurations.
    
 5. **Set up the database**:
    ```bash
-   python manage.py migrate  # Django example
-   sequelize db:migrate  # Sequelize example
+   Create a databse and a collection in the MongoDB Compass
    ```
 
 ## Configuration
 
-Detail any configurations that need to be set up:
 
 - **Environment Variables**:
   - `DATABASE_URL`: The connection string for the database.
-  - `SECRET_KEY`: A secret key for your application.
-  - `DEBUG`: Set to `True` for development, `False` for production.
-  - [Other environment variables as necessary]
+  - `JWT_SECRET`: The Jsonwebtoken secret key.
+  - `PORT`: The port number the application will run on.
 
 ## Running the Application
 
@@ -73,8 +57,7 @@ To run the application locally, follow these steps:
 
 1. **Start the development server**:
    ```bash
-   python manage.py runserver  # Django example
-   npm start  # Node.js example
+   npm run dev
    ```
 
 2. **Access the application**:
@@ -118,7 +101,7 @@ If you'd like to contribute to this project, please fork the repository and use 
 
 1. **Fork the repository**:
    ```bash
-   git clone https://github.com/yourusername/projectname.git
+   git clone https://github.com/fredrickray/fredrickray-financial-transaction-api
    ```
 
 2. **Create a new branch**:
@@ -137,11 +120,3 @@ If you'd like to contribute to this project, please fork the repository and use 
    ```
 
 5. **Create a pull request**.
-
-## License
-
-This project is licensed under the [Your License Name] - see the [LICENSE](LICENSE) file for details.
-
----
-
-You can adjust the instructions based on the specific technologies and processes in your project.
