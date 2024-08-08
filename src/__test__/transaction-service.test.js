@@ -77,7 +77,7 @@ describe("Transaction Service", () => {
 
       const req = {
         params: {
-          id: transaction.id,
+          id: transaction._id,
         },
       };
       const res = {
@@ -92,7 +92,7 @@ describe("Transaction Service", () => {
       expect(res.json).toHaveBeenCalledWith(
         expect.objectContaining({
           success: true,
-          data: expect.objectContaining({
+          transaction: expect.objectContaining({
             amount: 100,
             type: "credit",
             description: "Test transaction",
