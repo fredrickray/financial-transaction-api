@@ -20,15 +20,17 @@ class AuthService {
       }
 
       const newUser = new UserModel(reqBody);
-
       await newUser.save();
+
+      const token = createToken(newUser._id);
 
       const resPayload = {
         success: true,
         message: `User created successfully`,
+        user: newUser,
       };
 
-      res.status(201).json(resPayload);
+      res.status(200).set("Authorization", `Bearer ${token}`).json(resPayload);
     } catch (error) {
       next(error);
     }
